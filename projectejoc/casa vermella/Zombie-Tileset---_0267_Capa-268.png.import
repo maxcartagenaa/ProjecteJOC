@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyigfrgle207o"
-path="res://.godot/imported/walltile.png-9661c3e62d2685ff60a63b9ebd01b20c.ctex"
+uid="uid://dotdyyjdvg7dq"
+path="res://.godot/imported/Zombie-Tileset---_0267_Capa-268.png-0afc6a120be3f09ef6f59006aa217e50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://coses/walltile.png"
-dest_files=["res://.godot/imported/walltile.png-9661c3e62d2685ff60a63b9ebd01b20c.ctex"]
+source_file="res://casa vermella/Zombie-Tileset---_0267_Capa-268.png"
+dest_files=["res://.godot/imported/Zombie-Tileset---_0267_Capa-268.png-0afc6a120be3f09ef6f59006aa217e50.ctex"]
 
 [params]
 

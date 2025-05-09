@@ -11,4 +11,5 @@ config_version=5
 [application]
 
 config/name="ProjecteJOC"
+run/main_scene="uid://cka72n8wg2r2g"
 config/features=PackedStringArray("4.4", "Forward Plus")
