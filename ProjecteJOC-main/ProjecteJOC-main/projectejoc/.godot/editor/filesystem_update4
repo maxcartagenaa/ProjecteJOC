@@ -1,8 +1,10 @@
 res://scenes/main_menu.tscn
+res://scripts/node_state_machine.gd
 res://scenes/nivell1.tscn
 res://scenes/characters/character_body_2d.tscn
-res://scripts/node_state_machine.gd
-res://scenes/characters/idle_state.gd
-res://scripts/node_state.gd
-res://scripts/game_input_event.gd
 res://scenes/characters/walk_state.gd
+res://scenes/characters/player.gd
+res://scenes/characters/idle_state.gd
+res://scripts/game_input_event.gd
+res://casa_vermella_3.tscn
+res://casa_vermella_2.tscn

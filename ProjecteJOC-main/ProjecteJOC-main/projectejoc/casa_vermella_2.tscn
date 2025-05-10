@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://db6u06n7ppj30"]
+[gd_scene load_steps=87 format=3 uid="uid://db6u06n7ppj30"]
 
 [ext_resource type="Texture2D" uid="uid://dga3slw120xk6" path="res://assets/casa vermella/Zombie-Tileset---_0257_Capa-258.png" id="1_gkxfp"]
 [ext_resource type="Texture2D" uid="uid://bqxwdgg8deewi" path="res://assets/casa vermella/Zombie-Tileset---_0258_Capa-259.png" id="2_tk0yx"]
@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://btmnajyjwo4ic" path="res://assets/fences/Zombie-Tileset---_0200_Capa-201.png" id="32_0stvx"]
 [ext_resource type="Texture2D" uid="uid://d31j8bxbu30lm" path="res://assets/fences/Zombie-Tileset---_0201_Capa-202.png" id="33_kwfv0"]
 [ext_resource type="Texture2D" uid="uid://c8ktj5q6dpv3m" path="res://assets/fences/Zombie-Tileset---_0206_Capa-207.png" id="34_v55sn"]
+[ext_resource type="Texture2D" uid="uid://x46vlwb77gk6" path="res://assets/casa vermella/c2.png" id="35_2xtpr"]
 [ext_resource type="Texture2D" uid="uid://bks05r61mqlf3" path="res://assets/fences/Zombie-Tileset---_0214_Capa-215.png" id="35_5unod"]
 [ext_resource type="Texture2D" uid="uid://lx3gdwg518s1" path="res://assets/fences/Zombie-Tileset---_0212_Capa-213.png" id="36_ni767"]
 [ext_resource type="Texture2D" uid="uid://bqs8ya3rs3bix" path="res://assets/fences/Zombie-Tileset---_0211_Capa-212.png" id="37_8lwjf"]
@@ -252,6 +253,21 @@ texture = ExtResource("7_yjux7")
 texture = ExtResource("34_v55sn")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8afs"]
+texture = ExtResource("35_2xtpr")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uti10"]
 texture = ExtResource("35_5unod")
 0:0/0 = 0
@@ -284,6 +300,7 @@ sources/11 = SubResource("TileSetAtlasSource_no45e")
 sources/12 = SubResource("TileSetAtlasSource_x0jkq")
 sources/13 = SubResource("TileSetAtlasSource_48yb0")
 sources/14 = SubResource("TileSetAtlasSource_yjw2i")
+sources/3 = SubResource("TileSetAtlasSource_h8afs")
 
 [node name="casa vermella2" type="TileMap"]
 tile_set = SubResource("TileSet_ke31e")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://ony435aluh6w"]
+[gd_scene load_steps=96 format=3 uid="uid://ony435aluh6w"]
 
 [ext_resource type="Texture2D" uid="uid://dga3slw120xk6" path="res://assets/casa vermella/Zombie-Tileset---_0257_Capa-258.png" id="1_ws3go"]
 [ext_resource type="Texture2D" uid="uid://bqxwdgg8deewi" path="res://assets/casa vermella/Zombie-Tileset---_0258_Capa-259.png" id="2_e3vyg"]
@@ -13,7 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://j1x11gaydpj5" path="res://assets/casa vermella/Zombie-Tileset---_0275_Capa-276.png" id="11_8vwkb"]
 [ext_resource type="Texture2D" uid="uid://dnaewlrolrw8r" path="res://assets/casa vermella/Zombie-Tileset---_0276_Capa-277.png" id="12_gr4oj"]
 [ext_resource type="Texture2D" uid="uid://gqe0qqfnoa8i" path="res://assets/casa vermella/Zombie-Tileset---_0259_Capa-260.png" id="13_44vy7"]
+[ext_resource type="Texture2D" uid="uid://x46vlwb77gk6" path="res://assets/casa vermella/c2.png" id="14_52xjp"]
 [ext_resource type="Texture2D" uid="uid://q3wmsuvhji4w" path="res://assets/fences/Zombie-Tileset---_0194_Capa-195.png" id="14_186yj"]
+[ext_resource type="Texture2D" uid="uid://ryommbhoyxn3" path="res://assets/casa vermella/c1.png" id="15_hy3qd"]
 [ext_resource type="Texture2D" uid="uid://divda25ejjvsp" path="res://assets/casa vermella/Zombie-Tileset---_0280_Capa-281.png" id="15_wtend"]
 [ext_resource type="Texture2D" uid="uid://bfv822ln046aa" path="res://assets/casa vermella/Zombie-Tileset---_0281_Capa-282.png" id="16_jb7oj"]
 [ext_resource type="Texture2D" uid="uid://c3sx2jd8vgiyq" path="res://assets/casa vermella/Zombie-Tileset---_0282_Capa-283.png" id="17_28qd8"]
@@ -28,9 +30,11 @@
 [ext_resource type="Texture2D" uid="uid://02nasdbhlrpx" path="res://assets/casa vermella/3v.png" id="26_0utl1"]
 [ext_resource type="Texture2D" uid="uid://b6wkk6u3fyrug" path="res://assets/carrateras/Zombie-Tileset---_0068_Capa-69.png" id="27_stjah"]
 [ext_resource type="Texture2D" uid="uid://vpu6womdtam" path="res://assets/carrateras/Zombie-Tileset---_0067_Capa-68.png" id="28_f2viy"]
+[ext_resource type="Texture2D" uid="uid://cy04a4375p4hk" path="res://assets/aigua/Zombie-Tileset---_0077_Capa-78.png" id="29_e3vyg"]
 [ext_resource type="Texture2D" uid="uid://c7163odkkd17o" path="res://assets/fences/Zombie-Tileset---_0217_Capa-218.png" id="29_gtlra"]
 [ext_resource type="Texture2D" uid="uid://koyn74u0y0u2" path="res://assets/fences/Zombie-Tileset---_0196_Capa-197.png" id="30_sl7h5"]
 [ext_resource type="Texture2D" uid="uid://o7elcgjbugec" path="res://assets/fences/Zombie-Tileset---_0199_Capa-200.png" id="31_xjajo"]
+[ext_resource type="Texture2D" uid="uid://dbxd3k0r4u714" path="res://assets/casa vermella/c3.png" id="32_hy3qd"]
 [ext_resource type="Texture2D" uid="uid://btmnajyjwo4ic" path="res://assets/fences/Zombie-Tileset---_0200_Capa-201.png" id="32_y7awb"]
 [ext_resource type="Texture2D" uid="uid://d31j8bxbu30lm" path="res://assets/fences/Zombie-Tileset---_0201_Capa-202.png" id="33_t3am7"]
 [ext_resource type="Texture2D" uid="uid://c8ktj5q6dpv3m" path="res://assets/fences/Zombie-Tileset---_0206_Capa-207.png" id="34_bveto"]
@@ -91,6 +95,38 @@ texture = ExtResource("12_gr4oj")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7suui"]
 texture = ExtResource("13_44vy7")
 0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_58hb8"]
+texture = ExtResource("14_52xjp")
+margins = Vector2i(3, 0)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qi3ta"]
+texture = ExtResource("15_hy3qd")
+margins = Vector2i(1, 2)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2poab"]
 texture = ExtResource("14_186yj")
@@ -207,6 +243,8 @@ sources/9 = SubResource("TileSetAtlasSource_8en20")
 sources/14 = SubResource("TileSetAtlasSource_8lwjf")
 sources/15 = SubResource("TileSetAtlasSource_na350")
 sources/22 = SubResource("TileSetAtlasSource_2poab")
+sources/20 = SubResource("TileSetAtlasSource_58hb8")
+sources/21 = SubResource("TileSetAtlasSource_qi3ta")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bemd"]
 texture = ExtResource("27_stjah")
@@ -216,9 +254,61 @@ texture = ExtResource("27_stjah")
 texture = ExtResource("28_f2viy")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lofs0"]
+texture = ExtResource("29_e3vyg")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l617q"]
+texture = ExtResource("14_52xjp")
+margins = Vector2i(0, 3)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pnvso"]
+texture = ExtResource("15_hy3qd")
+margins = Vector2i(3, 3)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vwkb"]
+texture = ExtResource("32_hy3qd")
+margins = Vector2i(0, 3)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_ifelx"]
 sources/0 = SubResource("TileSetAtlasSource_8bemd")
 sources/1 = SubResource("TileSetAtlasSource_eh8to")
+sources/2 = SubResource("TileSetAtlasSource_lofs0")
+sources/3 = SubResource("TileSetAtlasSource_l617q")
+sources/4 = SubResource("TileSetAtlasSource_pnvso")
+sources/5 = SubResource("TileSetAtlasSource_8vwkb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b3hx1"]
 texture = ExtResource("14_186yj")
@@ -252,6 +342,22 @@ texture = ExtResource("7_qi3ta")
 texture = ExtResource("34_bveto")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xhlx6"]
+texture = ExtResource("15_hy3qd")
+margins = Vector2i(1, 3)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uti10"]
 texture = ExtResource("35_gda1e")
 0:0/0 = 0
@@ -284,19 +390,20 @@ sources/11 = SubResource("TileSetAtlasSource_no45e")
 sources/12 = SubResource("TileSetAtlasSource_x0jkq")
 sources/13 = SubResource("TileSetAtlasSource_48yb0")
 sources/14 = SubResource("TileSetAtlasSource_yjw2i")
+sources/3 = SubResource("TileSetAtlasSource_xhlx6")
 
 [node name="casa vermella3" type="TileMap"]
 tile_set = SubResource("TileSet_ke31e")
 format = 2
-layer_0/tile_data = PackedInt32Array(-1245166, 7, 0, -1310702, 7, 0, -1310706, 7, 0, -1245170, 7, 0, -1376238, 23, 0, -1376242, 0, 0, -1376241, 6, 0, -1376239, 18, 0, -1376240, 11, 0, -1179630, 15, 0, -1441774, 24, 0, -1441775, 17, 0, -1441776, 12, 0, -1441777, 5, 0, -1507310, 25, 0, -1507311, 16, 0, -1441778, 1, 0, -1507313, 4, 0, -1507314, 2, 0, -1507312, 13, 0, -1572847, 9, 0, -1572848, 8, 0, -1572849, 3, 0, -1310705, 7, 0, -1245169, 7, 0, -1179633, 15, 0, -1310703, 7, 0, -1245167, 7, 0, -1179631, 15, 0, -1245168, 10, 0, -1179632, 14, 0, -1179634, 15, 0, -1310704, 7, 0)
+layer_0/tile_data = PackedInt32Array(-1245166, 7, 0, -1310702, 7, 0, -1310706, 7, 0, -1245170, 7, 0, -1376238, 18, 0, -1376242, 6, 0, -1376241, 19, 0, -1376239, 19, 0, -1376240, 11, 0, -1179630, 15, 0, -1441774, 17, 0, -1441775, 12, 0, -1441776, 12, 0, -1441777, 12, 0, -1507310, 16, 0, -1507311, 13, 0, -1441778, 5, 0, -1507313, 13, 0, -1507314, 4, 0, -1507312, 13, 0, -1572847, 8, 0, -1572848, 8, 0, -1572849, 8, 0, -1310705, 7, 0, -1245169, 7, 0, -1179633, 15, 0, -1310703, 7, 0, -1245167, 7, 0, -1179631, 15, 0, -1245168, 10, 0, -1179634, 15, 0, -1310704, 7, 0, -1572850, 3, 0, -1376243, 0, 0, -1441779, 1, 0, -1507315, 2, 0, -1310701, 196628, 0, -1245165, 196628, 0, -1572846, 9, 0, -1376237, 23, 0, -1441773, 24, 0, -1507309, 25, 0, -1179632, 65557, 1)
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ifelx")
 format = 2
-layer_0/tile_data = PackedInt32Array(-1179632, 0, 0, -1179634, 1, 0, -1179630, 1, 0, -1179631, 1, 0, -1179633, 1, 0, -1179635, 1, 0, -1179629, 1, 0)
+layer_0/tile_data = PackedInt32Array(-1179632, 0, 0, -1179635, 3, 1, -1179634, 3, 1, -1179633, 3, 1, -1179629, 196612, 1, -1179630, 3, 1, -1310707, 5, 1, -1245171, 5, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, -2)
 tile_set = SubResource("TileSet_llfjx")
 format = 2
-layer_0/tile_data = PackedInt32Array(-1179634, 11, 0, -1179633, 10, 0, -1179631, 0, 0, -1179630, 13, 0, -1179632, 14, 0, -1179635, 11, 0, -1179629, 11, 0)
+layer_0/tile_data = PackedInt32Array(-1179634, 11, 0, -1179633, 10, 0, -1179631, 0, 0, -1179630, 13, 0, -1179635, 9, 0, -1179629, 9, 0, -1179632, 65539, 1)
