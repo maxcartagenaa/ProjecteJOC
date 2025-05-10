@@ -1,16 +1,3 @@
-res://scenes/main_menu.tscn
-res://scripts/node_state_machine.gd
 res://scenes/nivell1.tscn
+res://scripts/node_state_machine.gd
 res://scenes/characters/character_body_2d.tscn
-<<<<<<< HEAD
-res://scenes/characters/walk_state.gd
-res://scenes/characters/player.gd
-res://scenes/characters/idle_state.gd
-res://scripts/game_input_event.gd
-res://casa_vermella_3.tscn
-res://casa_vermella_2.tscn
-=======
-res://scenes/credits.tscn
-res://scenes/pause_menu.tscn
-res://scenes/pause_menu.gd
->>>>>>> 2ea4f97e57312c68660d4bbd40d6873aa9f5775d
