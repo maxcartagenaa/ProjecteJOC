@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2i4r5hbalxwe"]
 
 [ext_resource type="Texture2D" uid="uid://ddu1ifweee5ho" path="res://pause_menu.jpg" id="1_5d2l8"]
-[ext_resource type="Script" uid="uid://c12opu1rv7x6e" path="res://scenes/pause_menu.gd" id="1_kukqi"]
+[ext_resource type="Script" uid="uid://c12opu1rv7x6e" path="res://scripts/pause_menu.gd" id="1_kukqi"]
 [ext_resource type="Texture2D" uid="uid://43cdyn3fvnwd" path="res://blood.png" id="4_1s2dm"]
+
 
 [node name="pause_menu" type="Node2D"]
 script = ExtResource("1_kukqi")

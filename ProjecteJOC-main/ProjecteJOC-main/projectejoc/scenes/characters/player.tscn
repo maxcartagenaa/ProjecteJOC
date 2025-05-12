@@ -148,6 +148,7 @@ animations = [{
 radius = 8.0
 
 [node name="player" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_yewup")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -182,3 +183,11 @@ limit_right = 1785
 limit_bottom = 920
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
+
+[node name="Col_daño" type="Area2D" parent="." groups=["p_punch"]]
+position = Vector2(24, 0)
+collision_layer = 4
+
+[node name="ataque_1" type="CollisionShape2D" parent="Col_daño"]
+
+[node name="ataque_2" type="CollisionShape2D" parent="Col_daño"]

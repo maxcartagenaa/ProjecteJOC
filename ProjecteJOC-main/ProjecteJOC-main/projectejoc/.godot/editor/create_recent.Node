@@ -1,7 +1,12 @@
-Camera2D
 Node
 CollisionShape2D
+Area2D
+ParallaxLayer
+RayCast2D
+Node2D
 AnimatedSprite2D
 CharacterBody2D
+Timer
+Camera2D
 TileMap
 TileMapLayer

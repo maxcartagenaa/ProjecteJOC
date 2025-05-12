@@ -1,9 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://d1cqysbd86hhq"]
 
 [ext_resource type="Texture2D" uid="uid://dpatjps3lgjw2" path="res://credits_screen.png" id="1_2fbfq"]
-[ext_resource type="Script" uid="uid://b4q82ua8g13q7" path="res://scenes/credits.gd" id="1_mah5v"]
+[ext_resource type="Script" uid="uid://b4q82ua8g13q7" path="res://scripts/credits.gd" id="1_mah5v"]
 [ext_resource type="Texture2D" uid="uid://chlhyyv7gf7lt" path="res://zombie_credits.png" id="2_8gwij"]
 [ext_resource type="Texture2D" uid="uid://dv8qq26pdrs0m" path="res://back_credits.png" id="5_8gwij"]
+
 
 [node name="credits" type="Node2D"]
 script = ExtResource("1_mah5v")
