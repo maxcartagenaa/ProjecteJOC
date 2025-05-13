@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+var health = 3
+
+
 var speed = 60
 var player_chase = false 
 var player: Node2D = null
@@ -27,3 +30,14 @@ func _on_detaction_area_body_entered(body: Node2D) -> void:
 func _on_detaction_area_body_exited(body: Node2D) -> void:
 	player = null
 	player_chase = false
+	
+func take_damage():
+	health -= 1
+	
+	if health == 0:
+		
+		queue_free()
+		const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
+		var smoke = SMOKE_SCENE.instantiate()
+		get_parent().add_child(smoke)
+		smoke.global_position = global_position

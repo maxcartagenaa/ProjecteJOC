@@ -190,7 +190,7 @@ scale = Vector2(0.71875, 0.66129)
 sprite_frames = SubResource("SpriteFrames_wjec0")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.0639181
+frame_progress = 0.117494
 
 [node name="detaction_area" type="Area2D" parent="."]
 collision_layer = 2

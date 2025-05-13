@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://pggig1gh71n7"]
+[gd_scene load_steps=32 format=3 uid="uid://pggig1gh71n7"]
 
 [ext_resource type="Texture2D" uid="uid://11ov2jggh74a" path="res://scenes/characters/Zombie-Tileset---_0482_Capa-483.png" id="1_3ebvk"]
 [ext_resource type="Script" uid="uid://2iqjiiqa8aym" path="res://scenes/characters/player.gd" id="1_yewup"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" uid="uid://bvlnmptbseng6" path="res://scripts/node_state_machine.gd" id="13_qwk3a"]
 [ext_resource type="Script" uid="uid://dxqjposrvj8f2" path="res://scenes/characters/idle_state.gd" id="14_l5wmq"]
 [ext_resource type="Script" uid="uid://cmwuagr03fyn5" path="res://scenes/characters/walk_state.gd" id="15_l5wmq"]
+[ext_resource type="PackedScene" uid="uid://d2l5t0i4bqs0r" path="res://scenes/gun.tscn" id="17_rpnd8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ktxr1"]
 atlas = ExtResource("1_3ebvk")
@@ -184,3 +185,6 @@ limit_right = 1785
 limit_bottom = 920
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
+
+[node name="gun" parent="." instance=ExtResource("17_rpnd8")]
+position = Vector2(0, -8)
