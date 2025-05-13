@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1cqysbd86hhq"]
+[gd_scene load_steps=7 format=3 uid="uid://d1cqysbd86hhq"]
 
 [ext_resource type="Texture2D" uid="uid://dpatjps3lgjw2" path="res://credits_screen.png" id="1_2fbfq"]
 [ext_resource type="Script" uid="uid://b4q82ua8g13q7" path="res://scripts/credits.gd" id="1_mah5v"]
 [ext_resource type="Texture2D" uid="uid://chlhyyv7gf7lt" path="res://zombie_credits.png" id="2_8gwij"]
+[ext_resource type="FontFile" uid="uid://dwdqnjumakrju" path="res://hf-free-complete/compass-pro-v1.1/CompassPro.otf" id="4_mah5v"]
 [ext_resource type="Texture2D" uid="uid://dv8qq26pdrs0m" path="res://back_credits.png" id="5_8gwij"]
-
+[ext_resource type="FontFile" uid="uid://758kjjp8rotw" path="res://hf-free-complete/matchup-pro-v1.1/MatchupPro.ttf" id="5_kyhnv"]
 
 [node name="credits" type="Node2D"]
 script = ExtResource("1_mah5v")
@@ -19,43 +20,48 @@ position = Vector2(287, 427)
 texture = ExtResource("2_8gwij")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 497.0
-offset_top = 35.0
-offset_right = 825.0
-offset_bottom = 120.0
-theme_override_font_sizes/font_size = 50
+offset_left = 471.0
+offset_top = 27.0
+offset_right = 782.0
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("4_mah5v")
+theme_override_font_sizes/font_size = 70
 text = "Created by:"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 476.0
-offset_top = 125.0
-offset_right = 764.0
-offset_bottom = 167.0
+offset_left = 475.0
+offset_top = 145.0
+offset_right = 763.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("5_kyhnv")
 theme_override_font_sizes/font_size = 40
 text = "Marc Valls Portulas"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 488.0
-offset_top = 201.0
-offset_right = 751.0
-offset_bottom = 268.0
+offset_left = 492.0
+offset_top = 218.0
+offset_right = 755.0
+offset_bottom = 285.0
+theme_override_fonts/font = ExtResource("5_kyhnv")
 theme_override_font_sizes/font_size = 40
 text = "Martí López Calvo
 "
 
 [node name="Label4" type="Label" parent="."]
-offset_left = 462.0
-offset_top = 277.0
-offset_right = 788.0
-offset_bottom = 309.0
+offset_left = 464.0
+offset_top = 290.0
+offset_right = 790.0
+offset_bottom = 322.0
+theme_override_fonts/font = ExtResource("5_kyhnv")
 theme_override_font_sizes/font_size = 40
 text = "Xavier Dalmau Medina"
 
 [node name="Label5" type="Label" parent="."]
-offset_left = 470.0
-offset_top = 355.0
-offset_right = 785.0
-offset_bottom = 387.0
+offset_left = 468.0
+offset_top = 368.0
+offset_right = 783.0
+offset_bottom = 400.0
+theme_override_fonts/font = ExtResource("5_kyhnv")
 theme_override_font_sizes/font_size = 40
 text = "Max Cartagena Muñoz"
 

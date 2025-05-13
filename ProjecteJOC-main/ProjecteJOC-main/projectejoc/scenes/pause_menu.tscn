@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2i4r5hbalxwe"]
+[gd_scene load_steps=5 format=3 uid="uid://b2i4r5hbalxwe"]
 
 [ext_resource type="Texture2D" uid="uid://ddu1ifweee5ho" path="res://pause_menu.jpg" id="1_5d2l8"]
 [ext_resource type="Script" uid="uid://c12opu1rv7x6e" path="res://scripts/pause_menu.gd" id="1_kukqi"]
+[ext_resource type="FontFile" uid="uid://dwdqnjumakrju" path="res://hf-free-complete/compass-pro-v1.1/CompassPro.otf" id="3_5d2l8"]
 [ext_resource type="Texture2D" uid="uid://43cdyn3fvnwd" path="res://blood.png" id="4_1s2dm"]
-
 
 [node name="pause_menu" type="Node2D"]
 script = ExtResource("1_kukqi")
@@ -14,11 +14,12 @@ scale = Vector2(0.6, 0.601852)
 texture = ExtResource("1_5d2l8")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 299.0
-offset_top = 35.0
-offset_right = 828.0
-offset_bottom = 115.0
-theme_override_font_sizes/font_size = 90
+offset_left = 335.0
+offset_top = 63.0
+offset_right = 864.0
+offset_bottom = 157.0
+theme_override_fonts/font = ExtResource("3_5d2l8")
+theme_override_font_sizes/font_size = 100
 text = "PAUSE MENU"
 
 [node name="Label2" type="Label" parent="."]
@@ -26,6 +27,7 @@ offset_left = 471.0
 offset_top = 219.0
 offset_right = 659.0
 offset_bottom = 275.0
+theme_override_fonts/font = ExtResource("3_5d2l8")
 theme_override_font_sizes/font_size = 70
 text = "Restart"
 
@@ -34,26 +36,28 @@ offset_left = 443.0
 offset_top = 342.0
 offset_right = 710.0
 offset_bottom = 398.0
+theme_override_fonts/font = ExtResource("3_5d2l8")
 theme_override_font_sizes/font_size = 70
 text = "Main Menu"
 
 [node name="restart_button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.00392157)
-offset_left = 464.0
+offset_left = 470.0
 offset_top = 226.0
-offset_right = 668.0
+offset_right = 674.0
 offset_bottom = 283.0
 
 [node name="main_menu_button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0235294)
-offset_left = 434.0
-offset_top = 345.0
-offset_right = 713.0
-offset_bottom = 399.0
+offset_left = 442.0
+offset_top = 351.0
+offset_right = 721.0
+offset_bottom = 405.0
 
 [node name="Blood" type="Sprite2D" parent="."]
-position = Vector2(281, 124)
+position = Vector2(300, 140)
 scale = Vector2(0.633056, 0.623314)
 texture = ExtResource("4_1s2dm")
 
+[connection signal="pressed" from="restart_button" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="main_menu_button" to="." method="_on_main_menu_button_pressed"]
