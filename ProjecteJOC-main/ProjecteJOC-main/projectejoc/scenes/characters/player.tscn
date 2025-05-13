@@ -144,22 +144,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_jh7rg"]
-radius = 8.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g66nw"]
+size = Vector2(12, 18)
 
 [node name="player" type="CharacterBody2D"]
 collision_layer = 3
 script = ExtResource("1_yewup")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(5.96046e-08, -9.5)
+scale = Vector2(1.16667, 1.1875)
 sprite_frames = SubResource("SpriteFrames_l5wmq")
 animation = &"idle_left"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_jh7rg")
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_g66nw")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("13_qwk3a")
@@ -183,11 +184,3 @@ limit_right = 1785
 limit_bottom = 920
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
-
-[node name="Col_daño" type="Area2D" parent="." groups=["p_punch"]]
-position = Vector2(24, 0)
-collision_layer = 4
-
-[node name="ataque_1" type="CollisionShape2D" parent="Col_daño"]
-
-[node name="ataque_2" type="CollisionShape2D" parent="Col_daño"]
