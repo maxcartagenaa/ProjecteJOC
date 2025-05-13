@@ -190,7 +190,7 @@ scale = Vector2(0.71875, 0.66129)
 sprite_frames = SubResource("SpriteFrames_wjec0")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.953119
+frame_progress = 0.0639181
 
 [node name="detaction_area" type="Area2D" parent="."]
 collision_layer = 2
@@ -201,7 +201,7 @@ position = Vector2(0, -13)
 shape = SubResource("CircleShape2D_i4rgx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8.25)
+position = Vector2(0, -9.25)
 shape = SubResource("RectangleShape2D_2mchx")
 debug_color = Color(0.917647, 0.21824, 0.470979, 0.42)
 

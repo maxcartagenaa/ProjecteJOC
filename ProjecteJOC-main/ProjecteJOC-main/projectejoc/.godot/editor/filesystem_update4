@@ -1,8 +1,9 @@
 res://scenes/nivell1.tscn
 res://scripts/node_state_machine.gd
-res://scenes/characters/player.tscn
 res://scenes/spawner.tscn
+res://scenes/characters/player.tscn
 res://scenes/enemy.tscn
 res://scenes/pause_menu.tscn
 res://scenes/credits.tscn
 res://scenes/main_menu.tscn
+res://scripts/enemy.gd

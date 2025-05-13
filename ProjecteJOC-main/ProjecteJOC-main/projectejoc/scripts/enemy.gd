@@ -1,21 +1,22 @@
 extends CharacterBody2D
 
-var speed = 100
+var speed = 60
 var player_chase = false 
-var player = null
+var player: Node2D = null
 
 func _physics_process(delta):
-	if player_chase == true:
-		position += (player.position - position) / speed
-		
+	if player_chase and player != null:
+		var direction = (player.global_position - global_position).normalized()
+		velocity = direction * speed
+
 		$AnimatedSprite2D.play("walk")
-		if (player.position.x - position.x) < 0:
-			$AnimatedSprite2D.flip_h = true
-		else:
-			$AnimatedSprite2D.flip_h = false	
-			
+		$AnimatedSprite2D.flip_h = direction.x < 0
 	else:
+		velocity = Vector2.ZERO
 		$AnimatedSprite2D.play("idle")
+
+	move_and_slide()
+
 
 func _on_detaction_area_body_entered(body: Node2D) -> void:
 	player = body
