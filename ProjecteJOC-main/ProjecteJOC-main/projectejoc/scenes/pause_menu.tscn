@@ -1,63 +1,55 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2i4r5hbalxwe"]
+[gd_scene load_steps=5 format=3 uid="uid://cg1oqjnfx3tyt"]
 
 [ext_resource type="Texture2D" uid="uid://ddu1ifweee5ho" path="res://pause_menu.jpg" id="1_5d2l8"]
-[ext_resource type="Script" uid="uid://c12opu1rv7x6e" path="res://scripts/pause_menu.gd" id="1_kukqi"]
+[ext_resource type="Script" uid="uid://cfhf5fe5slp5h" path="res://pause_menu_1.gd" id="1_7l7mv"]
 [ext_resource type="FontFile" uid="uid://dwdqnjumakrju" path="res://hf-free-complete/compass-pro-v1.1/CompassPro.otf" id="3_5d2l8"]
-[ext_resource type="Texture2D" uid="uid://43cdyn3fvnwd" path="res://blood.png" id="4_1s2dm"]
+[ext_resource type="FontFile" uid="uid://758kjjp8rotw" path="res://hf-free-complete/matchup-pro-v1.1/MatchupPro.ttf" id="4_v4r4p"]
 
-[node name="pause_menu" type="Node2D"]
-script = ExtResource("1_kukqi")
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7l7mv")
 
-[node name="PauseMenu" type="Sprite2D" parent="."]
-position = Vector2(577, 324)
-scale = Vector2(0.6, 0.601852)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 322)
+scale = Vector2(0.597917, 0.598148)
 texture = ExtResource("1_5d2l8")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 335.0
-offset_top = 63.0
-offset_right = 864.0
-offset_bottom = 157.0
-theme_override_fonts/font = ExtResource("3_5d2l8")
-theme_override_font_sizes/font_size = 100
-text = "PAUSE MENU"
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 471.0
-offset_top = 219.0
-offset_right = 659.0
-offset_bottom = 275.0
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("3_5d2l8")
-theme_override_font_sizes/font_size = 70
-text = "Restart"
+theme_override_font_sizes/font_size = 90
+text = "PAUSED"
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 443.0
-offset_top = 342.0
-offset_right = 710.0
-offset_bottom = 398.0
-theme_override_fonts/font = ExtResource("3_5d2l8")
-theme_override_font_sizes/font_size = 70
+[node name="resume_button" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_v4r4p")
+theme_override_font_sizes/font_size = 40
+text = "Resume Game"
+
+[node name="main_menu_button" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_v4r4p")
+theme_override_font_sizes/font_size = 40
 text = "Main Menu"
 
-[node name="restart_button" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0.00392157)
-offset_left = 470.0
-offset_top = 226.0
-offset_right = 674.0
-offset_bottom = 283.0
-
-[node name="main_menu_button" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0.0235294)
-offset_left = 442.0
-offset_top = 351.0
-offset_right = 721.0
-offset_bottom = 405.0
-
-[node name="Blood" type="Sprite2D" parent="."]
-position = Vector2(300, 140)
-scale = Vector2(0.633056, 0.623314)
-texture = ExtResource("4_1s2dm")
-
-[connection signal="pressed" from="restart_button" to="." method="_on_restart_button_pressed"]
-[connection signal="pressed" from="main_menu_button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="GridContainer/resume_button" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="GridContainer/main_menu_button" to="." method="_on_main_menu_button_pressed"]

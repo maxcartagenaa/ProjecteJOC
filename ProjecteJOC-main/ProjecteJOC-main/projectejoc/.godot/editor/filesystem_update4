@@ -10,7 +10,7 @@ res://scenes/nivell1.tscn
 res://scenes/gun.tscn
 res://scenes/characters/player.tscn
 res://scenes/bullet.tscn
-res://smoke_explosion/smoke_explosion.tscn
 res://scenes/mort_animation_enemy.tscn
-res://scenes/pause_button.tscn
 res://scripts/nivell_1.gd
+res://scripts/pause_menu.gd
+res://pause_menu_1.gd

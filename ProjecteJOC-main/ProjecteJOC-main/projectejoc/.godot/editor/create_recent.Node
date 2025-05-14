@@ -1,4 +1,8 @@
+Button
+Label
+GridContainer
 Sprite2D
+ColorRect
 Control
 AnimatedSprite2D
 CollisionShape2D
@@ -8,7 +12,3 @@ CharacterBody2D
 TileMap
 Node
 ParallaxLayer
-RayCast2D
-Node2D
-Timer
-Camera2D
