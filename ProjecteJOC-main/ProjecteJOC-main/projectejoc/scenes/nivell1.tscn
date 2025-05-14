@@ -1,4 +1,4 @@
-[gd_scene load_steps=257 format=3 uid="uid://cka72n8wg2r2g"]
+[gd_scene load_steps=258 format=3 uid="uid://cka72n8wg2r2g"]
 
 [ext_resource type="Texture2D" uid="uid://cv6wrojfktdtk" path="res://assets/carrateras/1pix.png" id="1_6tgqv"]
 [ext_resource type="Script" uid="uid://b5i10t4mww38y" path="res://scripts/nivell_1.gd" id="1_e2ytl"]
@@ -108,6 +108,7 @@
 [ext_resource type="PackedScene" uid="uid://pggig1gh71n7" path="res://scenes/characters/player.tscn" id="108_k7spy"]
 [ext_resource type="PackedScene" uid="uid://b5a8j2vorhwud" path="res://scenes/spawner.tscn" id="109_b2msg"]
 [ext_resource type="PackedScene" uid="uid://4edxqqwtc6db" path="res://scenes/enemy.tscn" id="110_wdu4e"]
+[ext_resource type="PackedScene" uid="uid://cg1oqjnfx3tyt" path="res://scenes/pause_menu.tscn" id="110_xmtfq"]
 [ext_resource type="Texture2D" uid="uid://c1krg0n448bc6" path="res://Zombie Apocalypse Tileset Reference.png" id="111_xmtfq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bxdf"]
@@ -4399,3 +4400,8 @@ layer_0/tile_data = PackedInt32Array(2097216, 1572865, 13, 2097217, 1638401, 13,
 tile_set = SubResource("TileSet_cf84b")
 format = 2
 layer_0/tile_data = PackedInt32Array(1507392, 983043, 13, 1441856, 983043, 11, 851993, 983043, 11, 917529, 983043, 13, 1704001, 1638403, 7, 1704002, 1703939, 7, 1704003, 1769475, 7, 1310734, 1638403, 1, 1310735, 1703939, 1, 1310736, 1769475, 1, 65553, 1638403, 1, 65554, 1703939, 1, 65555, 1769475, 1, 1638494, 1638403, 1, 1638495, 1703939, 1, 1638496, 1769475, 1, 3276890, 917507, 6, 3342426, 917507, 7, 3276892, 917507, 6, 3342428, 917507, 7, 2949217, 1179651, 1, 3014753, 1179651, 2, 2949218, 1245187, 1, 3014754, 1245187, 2, -131004, 1179651, 1, -65468, 1179651, 2, -131003, 1245187, 1, -65467, 1245187, 2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("110_xmtfq")]
+process_mode = 0

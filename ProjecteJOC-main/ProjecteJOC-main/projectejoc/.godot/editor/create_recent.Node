@@ -1,8 +1,9 @@
+CanvasLayer
+Sprite2D
+ColorRect
 Button
 Label
 GridContainer
-Sprite2D
-ColorRect
 Control
 AnimatedSprite2D
 CollisionShape2D

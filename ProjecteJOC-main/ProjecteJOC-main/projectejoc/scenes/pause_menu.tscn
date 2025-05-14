@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://758kjjp8rotw" path="res://hf-free-complete/matchup-pro-v1.1/MatchupPro.ttf" id="4_v4r4p"]
 
 [node name="pause_menu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,11 +14,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7l7mv")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(577, 322)
-scale = Vector2(0.597917, 0.598148)
-texture = ExtResource("1_5d2l8")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -40,16 +36,26 @@ theme_override_font_sizes/font_size = 90
 text = "PAUSED"
 
 [node name="resume_button" type="Button" parent="GridContainer"]
+process_mode = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_v4r4p")
 theme_override_font_sizes/font_size = 40
 text = "Resume Game"
 
 [node name="main_menu_button" type="Button" parent="GridContainer"]
+process_mode = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_v4r4p")
 theme_override_font_sizes/font_size = 40
 text = "Main Menu"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="PauseMenu" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(580, 324.5)
+scale = Vector2(0.602083, 0.599074)
+texture = ExtResource("1_5d2l8")
 
 [connection signal="pressed" from="GridContainer/resume_button" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="GridContainer/main_menu_button" to="." method="_on_main_menu_button_pressed"]
