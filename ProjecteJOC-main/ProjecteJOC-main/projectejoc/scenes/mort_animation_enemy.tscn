@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://cmu5wx16h2uyu"]
+
+[ext_resource type="Texture2D" uid="uid://b0a3h4tacm80f" path="res://scenes/enemy/Zombie.png" id="1_h60q5"]
+[ext_resource type="Script" uid="uid://byvu3nn5xwagn" path="res://scripts/mort_animation_enemy.gd" id="2_6ths5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1lgkd"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_keu0b"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4qly"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j14wr"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sp1oc"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kb88q"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(160, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crtyq"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(192, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37f52"]
+atlas = ExtResource("1_h60q5")
+region = Rect2(224, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c81i3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1lgkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_keu0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4qly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j14wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sp1oc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kb88q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crtyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37f52")
+}],
+"loop": false,
+"name": &"death",
+"speed": 7.0
+}]
+
+[node name="mort_animation_enemy" type="AnimatedSprite2D"]
+position = Vector2(0, -12.5)
+scale = Vector2(0.75, 0.78125)
+sprite_frames = SubResource("SpriteFrames_c81i3")
+animation = &"death"
+frame = 7
+frame_progress = 1.0
+script = ExtResource("2_6ths5")

@@ -1,8 +1,9 @@
+Sprite2D
+Control
 AnimatedSprite2D
 CollisionShape2D
 Area2D
 Marker2D
-Sprite2D
 CharacterBody2D
 TileMap
 Node
@@ -11,4 +12,3 @@ RayCast2D
 Node2D
 Timer
 Camera2D
-TileMapLayer
