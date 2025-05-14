@@ -1,7 +1,7 @@
 res://scenes/spawner.tscn
 res://scripts/enemy.gd
-res://smoke_explosion/smoke_explosion.gdshader
 res://scripts/node_state_machine.gd
+res://smoke_explosion/smoke_explosion.gdshader
 res://scenes/enemy.tscn
 res://scenes/pause_menu.tscn
 res://scenes/credits.tscn
@@ -11,7 +11,6 @@ res://scenes/gun.tscn
 res://scenes/characters/player.tscn
 res://scenes/bullet.tscn
 res://smoke_explosion/smoke_explosion.tscn
-res://scenes/mort_animation_enemy.gd
 res://scenes/mort_animation_enemy.tscn
-res://scripts/mort_animation_enemy.gd
 res://scenes/pause_button.tscn
+res://scripts/nivell_1.gd
