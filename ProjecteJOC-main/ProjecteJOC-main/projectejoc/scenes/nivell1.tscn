@@ -1,4 +1,4 @@
-[gd_scene load_steps=258 format=3 uid="uid://cka72n8wg2r2g"]
+[gd_scene load_steps=260 format=3 uid="uid://cka72n8wg2r2g"]
 
 [ext_resource type="Texture2D" uid="uid://cv6wrojfktdtk" path="res://assets/carrateras/1pix.png" id="1_6tgqv"]
 [ext_resource type="Script" uid="uid://b5i10t4mww38y" path="res://scripts/nivell_1.gd" id="1_e2ytl"]
@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://btmnajyjwo4ic" path="res://assets/fences/Zombie-Tileset---_0200_Capa-201.png" id="9_no45e"]
 [ext_resource type="Texture2D" uid="uid://ced3pnu577hsn" path="res://assets/carrateras/18.png" id="10_2foqt"]
 [ext_resource type="Texture2D" uid="uid://bv2ofp30xvnvn" path="res://assets/fences/Zombie-Tileset---_0198_Capa-199.png" id="10_x0jkq"]
-[ext_resource type="Texture2D" uid="uid://cyigfrgle207o" path="res://walltile.png" id="11_1n8dv"]
+[ext_resource type="Texture2D" uid="uid://cyigfrgle207o" path="res://assets/carrateras/walltile.png" id="11_1n8dv"]
 [ext_resource type="Texture2D" uid="uid://d37lig2itur76" path="res://assets/fences/Zombie-Tileset---_0202_Capa-203.png" id="11_48yb0"]
 [ext_resource type="Texture2D" uid="uid://deaqvcqm1tujk" path="res://assets/carrateras/3.png" id="12_0mh1e"]
 [ext_resource type="Texture2D" uid="uid://dott8qe5jk7jt" path="res://assets/carrateras/walltile2.png" id="12_vp5l8"]
@@ -107,6 +107,7 @@
 [ext_resource type="Texture2D" uid="uid://d2yabhka5askn" path="res://assets/hospital/poster.png" id="107_k7spy"]
 [ext_resource type="PackedScene" uid="uid://pggig1gh71n7" path="res://scenes/characters/player.tscn" id="108_k7spy"]
 [ext_resource type="PackedScene" uid="uid://b5a8j2vorhwud" path="res://scenes/spawner.tscn" id="109_b2msg"]
+[ext_resource type="Script" uid="uid://c4c3y8pfdh1mj" path="res://scenes/spawner2.gd" id="110_e2ytl"]
 [ext_resource type="PackedScene" uid="uid://4edxqqwtc6db" path="res://scenes/enemy.tscn" id="110_wdu4e"]
 [ext_resource type="PackedScene" uid="uid://cg1oqjnfx3tyt" path="res://scenes/pause_menu.tscn" id="110_xmtfq"]
 [ext_resource type="Texture2D" uid="uid://c1krg0n448bc6" path="res://Zombie Apocalypse Tileset Reference.png" id="111_xmtfq"]
@@ -4344,6 +4345,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_unobd")
 sources/1 = SubResource("TileSetAtlasSource_an8cn")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7beg"]
+size = Vector2(387, 200.5)
+
 [node name="nivell1" type="Node2D"]
 script = ExtResource("1_e2ytl")
 
@@ -4385,6 +4389,10 @@ layer_0/tile_data = PackedInt32Array(-851875, 0, 1, -851874, 0, 1, -851873, 0, 1
 
 [node name="spawner" parent="." instance=ExtResource("109_b2msg")]
 
+[node name="spawner2" parent="." instance=ExtResource("109_b2msg")]
+position = Vector2(5, 114)
+script = ExtResource("110_e2ytl")
+
 [node name="casa" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_6bxdf")
 format = 2
@@ -4405,3 +4413,8 @@ layer_0/tile_data = PackedInt32Array(1507392, 983043, 13, 1441856, 983043, 11, 8
 
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("110_xmtfq")]
 process_mode = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(200.5, 215.75)
+shape = SubResource("RectangleShape2D_s7beg")
+debug_color = Color(0.909191, 0.000109546, 0.734205, 0.42)

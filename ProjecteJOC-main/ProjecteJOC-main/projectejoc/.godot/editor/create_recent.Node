@@ -1,3 +1,4 @@
+CollisionShape2D
 CanvasLayer
 Sprite2D
 ColorRect
@@ -6,10 +7,8 @@ Label
 GridContainer
 Control
 AnimatedSprite2D
-CollisionShape2D
 Area2D
 Marker2D
 CharacterBody2D
 TileMap
 Node
-ParallaxLayer

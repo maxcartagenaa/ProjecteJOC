@@ -11,4 +11,5 @@ res://scenes/characters/player.tscn
 res://scenes/bullet.tscn
 res://scenes/mort_animation_enemy.tscn
 res://scenes/pause_menu.tscn
-res://pause_menu_1.gd
+res://scripts/spawner.gd
+res://scenes/spawner2.gd
