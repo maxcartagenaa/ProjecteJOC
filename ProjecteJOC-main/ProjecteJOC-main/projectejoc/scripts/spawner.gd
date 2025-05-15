@@ -1,27 +1,16 @@
-extends Area2D
 
-@onready var Enemy_scene = load("res://scenes/enemy.tscn")
+extends Node2D  # o Area2D
 
-var bool_spawn = true
+@onready var Enemy_scene = preload("res://scenes/enemy.tscn")
+var rng = RandomNumberGenerator.new()
 
-var random = RandomNumberGenerator.new()
+func _ready():
+	rng.randomize()
 
-func _ready() -> void:
-	random.randomize()
+func spawn_wave(count: int, death_callback: Callable):
+	for i in range(count):
+		var enemy = Enemy_scene.instantiate()
+		enemy.position = Vector2(rng.randi_range(17, 427), rng.randi_range(-242, 22))
+		add_child(enemy)
+		enemy.connect("dead", death_callback)
 	
-func _process(delta: float) -> void:
-	spawn()
- 
-func spawn():
-	if bool_spawn:
-		$Timer.start()
-		bool_spawn = false
-		var enemy_instance = Enemy_scene.instantiate()
-		enemy_instance.position = Vector2(random.randi_range(17.0,427.0), random.randi_range(-242.0,22.0))
-		add_child(enemy_instance)
-
-
-
-
-func _on_timer_timeout() -> void:
-	bool_spawn = true

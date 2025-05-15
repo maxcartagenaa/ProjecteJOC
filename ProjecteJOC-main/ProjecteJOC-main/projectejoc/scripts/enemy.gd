@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var health = 3
 
+signal dead
 
 var speed = 60
 var player_chase = false 
@@ -35,7 +36,7 @@ func take_damage():
 	health -= 1
 	
 	if health == 0:
-		
+		emit_signal("dead")
 		queue_free()
 		const SMOKE_SCENE = preload("res://scenes/mort_animation_enemy.tscn")
 		var smoke = SMOKE_SCENE.instantiate()
