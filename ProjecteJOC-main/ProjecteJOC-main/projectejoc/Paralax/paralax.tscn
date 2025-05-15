@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://d31cv4hawawcr"]
+
+[ext_resource type="Texture2D" uid="uid://by4jf6mlw5uyj" path="res://Paralax/pngtree-pixel-art-sports-car-png-image_6299218-removebg-preview.png" id="1_eotw7"]
+[ext_resource type="Script" uid="uid://de8wwf814t0cc" path="res://Paralax/paralax.gd" id="1_tdvqx"]
+[ext_resource type="Texture2D" uid="uid://ci0j3kjd1obde" path="res://Paralax/parallax-mountain-bg.png" id="3_eotw7"]
+[ext_resource type="Texture2D" uid="uid://rk5gilbowy6i" path="res://Paralax/parallax-mountain-montain-far.png" id="4_tdvqx"]
+[ext_resource type="Texture2D" uid="uid://ccuxmv74qk60r" path="res://Paralax/parallax-mountain-mountains.png" id="5_qtj2g"]
+[ext_resource type="Texture2D" uid="uid://lp236dcykk66" path="res://Paralax/parallax-mountain-trees.png" id="6_ckdsm"]
+[ext_resource type="Texture2D" uid="uid://cc8auplkw7mno" path="res://Paralax/parallax-mountain-foreground-trees.png" id="7_py1ty"]
+[ext_resource type="Texture2D" uid="uid://5jt8tvo8yg64" path="res://Paralax/istockphoto-1474983328-612x612.jpg" id="8_eotw7"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_tdvqx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(139, 142)
+rotation = 0.000774543
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_eotw7")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(4.2, 4.2)
+limit_bottom = 160
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+show_behind_parent = true
+position = Vector2(576, 327)
+motion_scale = Vector2(0, 1)
+motion_mirroring = Vector2(272, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-440, -246)
+texture = ExtResource("3_eotw7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-168, -246)
+texture = ExtResource("3_eotw7")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 327)
+motion_scale = Vector2(0.75, 1)
+motion_mirroring = Vector2(272, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(-440, -246)
+texture = ExtResource("4_tdvqx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(-168, -246)
+texture = ExtResource("4_tdvqx")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 327)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(-305, -246)
+texture = ExtResource("5_qtj2g")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 327)
+motion_scale = Vector2(1.5, 1)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(-305, -246)
+texture = ExtResource("6_ckdsm")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 327)
+motion_scale = Vector2(2.5, 1)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(-305, -246)
+texture = ExtResource("7_py1ty")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 740)
+scale = Vector2(2, 0.5)
+motion_scale = Vector2(5, 1)
+motion_mirroring = Vector2(120, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer7"]
+position = Vector2(-93.5, -838)
+scale = Vector2(1.11438, 0.577121)
+texture = ExtResource("8_eotw7")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 375.0
+offset_top = 298.0
+offset_right = 475.0
+offset_bottom = 321.0
+scale = Vector2(6, 6)
+text = "You survived"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://g5nb33276eof"]
+
+[ext_resource type="Texture2D" uid="uid://b7st0qdudni1" path="res://pngtree-pixel-art-sports-car-png-image_6299218.jpg" id="1_16k11"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+texture = ExtResource("1_16k11")
