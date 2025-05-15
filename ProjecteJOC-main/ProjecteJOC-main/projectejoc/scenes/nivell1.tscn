@@ -1,4 +1,4 @@
-[gd_scene load_steps=260 format=3 uid="uid://cka72n8wg2r2g"]
+[gd_scene load_steps=261 format=3 uid="uid://cka72n8wg2r2g"]
 
 [ext_resource type="Texture2D" uid="uid://cv6wrojfktdtk" path="res://assets/carrateras/1pix.png" id="1_6tgqv"]
 [ext_resource type="Script" uid="uid://b5i10t4mww38y" path="res://scripts/nivell_1.gd" id="1_e2ytl"]
@@ -4345,8 +4345,10 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_unobd")
 sources/1 = SubResource("TileSetAtlasSource_an8cn")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmtfq"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7beg"]
-size = Vector2(387, 200.5)
+size = Vector2(26.5, 72.205)
 
 [node name="nivell1" type="Node2D"]
 script = ExtResource("1_e2ytl")
@@ -4390,7 +4392,6 @@ layer_0/tile_data = PackedInt32Array(-851875, 0, 1, -851874, 0, 1, -851873, 0, 1
 [node name="spawner" parent="." instance=ExtResource("109_b2msg")]
 
 [node name="spawner2" parent="." instance=ExtResource("109_b2msg")]
-position = Vector2(5, 114)
 script = ExtResource("110_e2ytl")
 
 [node name="casa" type="TileMap" parent="."]
@@ -4410,11 +4411,17 @@ format = 2
 layer_0/tile_data = PackedInt32Array(1507392, 983043, 13, 1441856, 983043, 11, 851993, 983043, 11, 917529, 983043, 13, 1704001, 1638403, 7, 1704002, 1703939, 7, 1704003, 1769475, 7, 1310734, 1638403, 1, 1310735, 1703939, 1, 1310736, 1769475, 1, 65553, 1638403, 1, 65554, 1703939, 1, 65555, 1769475, 1, 1638494, 1638403, 1, 1638495, 1703939, 1, 1638496, 1769475, 1, 3276890, 917507, 6, 3342426, 917507, 7, 3276892, 917507, 6, 3342428, 917507, 7, 2949217, 1179651, 1, 3014753, 1179651, 2, 2949218, 1245187, 1, 3014754, 1245187, 2, -131004, 1179651, 1, -65468, 1179651, 2, -131003, 1245187, 1, -65467, 1245187, 2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("110_xmtfq")]
 process_mode = 0
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(17, -242)
+shape = SubResource("RectangleShape2D_xmtfq")
+debug_color = Color(0.764642, 0.31214, 0.811958, 0.42)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(200.5, 215.75)
+position = Vector2(427, 22)
 shape = SubResource("RectangleShape2D_s7beg")
 debug_color = Color(0.909191, 0.000109546, 0.734205, 0.42)
