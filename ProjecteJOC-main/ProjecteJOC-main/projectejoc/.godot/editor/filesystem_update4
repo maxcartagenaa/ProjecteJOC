@@ -1,8 +1,7 @@
+res://scenes/main_menu.tscn
 res://scripts/enemy.gd
 res://scripts/node_state_machine.gd
 res://smoke_explosion/smoke_explosion.gdshader
-res://scenes/you_died_menu.tscn
-res://scenes/main_menu.tscn
 res://scenes/spawner.tscn
 res://scenes/enemy.tscn
 res://scenes/credits.tscn
@@ -11,7 +10,4 @@ res://scenes/characters/player.tscn
 res://scenes/bullet.tscn
 res://scenes/mort_animation_enemy.tscn
 res://scenes/pause_menu.tscn
-res://scenes/you_died_text.gd
-res://scenes/quit_game_button.gd
-res://scenes/try_again_button.gd
-res://scenes/quit_game_button2.gd
+res://scenes/you_died_menu.tscn

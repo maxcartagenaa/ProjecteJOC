@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://btmnajyjwo4ic" path="res://assets/fences/Zombie-Tileset---_0200_Capa-201.png" id="9_no45e"]
 [ext_resource type="Texture2D" uid="uid://ced3pnu577hsn" path="res://assets/carrateras/18.png" id="10_2foqt"]
 [ext_resource type="Texture2D" uid="uid://bv2ofp30xvnvn" path="res://assets/fences/Zombie-Tileset---_0198_Capa-199.png" id="10_x0jkq"]
-[ext_resource type="Texture2D" uid="uid://cyigfrgle207o" path="res://assets/carrateras/walltile.png" id="11_1n8dv"]
+[ext_resource type="Texture2D" uid="uid://cyigfrgle207o" path="res://walltile.png" id="11_1n8dv"]
 [ext_resource type="Texture2D" uid="uid://d37lig2itur76" path="res://assets/fences/Zombie-Tileset---_0202_Capa-203.png" id="11_48yb0"]
 [ext_resource type="Texture2D" uid="uid://deaqvcqm1tujk" path="res://assets/carrateras/3.png" id="12_0mh1e"]
 [ext_resource type="Texture2D" uid="uid://dott8qe5jk7jt" path="res://assets/carrateras/walltile2.png" id="12_vp5l8"]
