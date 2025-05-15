@@ -1,4 +1,4 @@
-[gd_scene load_steps=261 format=3 uid="uid://cka72n8wg2r2g"]
+[gd_scene load_steps=265 format=3 uid="uid://cka72n8wg2r2g"]
 
 [ext_resource type="Texture2D" uid="uid://cv6wrojfktdtk" path="res://assets/carrateras/1pix.png" id="1_6tgqv"]
 [ext_resource type="Script" uid="uid://b5i10t4mww38y" path="res://scripts/nivell_1.gd" id="1_e2ytl"]
@@ -110,7 +110,11 @@
 [ext_resource type="Script" uid="uid://c4c3y8pfdh1mj" path="res://scenes/spawner2.gd" id="110_e2ytl"]
 [ext_resource type="PackedScene" uid="uid://4edxqqwtc6db" path="res://scenes/enemy.tscn" id="110_wdu4e"]
 [ext_resource type="PackedScene" uid="uid://cg1oqjnfx3tyt" path="res://scenes/pause_menu.tscn" id="110_xmtfq"]
+[ext_resource type="Script" uid="uid://8eq1odkhxocv" path="res://scenes/spawner3.gd" id="111_e2ytl"]
 [ext_resource type="Texture2D" uid="uid://c1krg0n448bc6" path="res://Zombie Apocalypse Tileset Reference.png" id="111_xmtfq"]
+[ext_resource type="Script" uid="uid://q5xy26fy34x0" path="res://scenes/spawner4.gd" id="112_s7beg"]
+[ext_resource type="Script" uid="uid://c6ilt4ey1vuft" path="res://scenes/spawner5.gd" id="113_cf84b"]
+[ext_resource type="Script" uid="uid://benesj6opgoll" path="res://scenes/spawner6.gd" id="114_x8ss6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bxdf"]
 texture = ExtResource("34_rqr3a")
@@ -4346,9 +4350,10 @@ sources/0 = SubResource("TileSetAtlasSource_unobd")
 sources/1 = SubResource("TileSetAtlasSource_an8cn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xmtfq"]
+size = Vector2(61, 331)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7beg"]
-size = Vector2(26.5, 72.205)
+size = Vector2(416.375, 72.205)
 
 [node name="nivell1" type="Node2D"]
 script = ExtResource("1_e2ytl")
@@ -4394,6 +4399,18 @@ layer_0/tile_data = PackedInt32Array(-851875, 0, 1, -851874, 0, 1, -851873, 0, 1
 [node name="spawner2" parent="." instance=ExtResource("109_b2msg")]
 script = ExtResource("110_e2ytl")
 
+[node name="spawner3" parent="." instance=ExtResource("109_b2msg")]
+script = ExtResource("111_e2ytl")
+
+[node name="spawner4" parent="." instance=ExtResource("109_b2msg")]
+script = ExtResource("112_s7beg")
+
+[node name="spawner5" parent="." instance=ExtResource("109_b2msg")]
+script = ExtResource("113_cf84b")
+
+[node name="spawner6" parent="." instance=ExtResource("109_b2msg")]
+script = ExtResource("114_x8ss6")
+
 [node name="casa" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_6bxdf")
 format = 2
@@ -4417,11 +4434,11 @@ visible = false
 process_mode = 0
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(17, -242)
+position = Vector2(1131, 523)
 shape = SubResource("RectangleShape2D_xmtfq")
 debug_color = Color(0.764642, 0.31214, 0.811958, 0.42)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(427, 22)
+position = Vector2(1766, 733)
 shape = SubResource("RectangleShape2D_s7beg")
 debug_color = Color(0.909191, 0.000109546, 0.734205, 0.42)
