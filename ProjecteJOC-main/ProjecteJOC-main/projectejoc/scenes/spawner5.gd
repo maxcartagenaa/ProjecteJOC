@@ -17,7 +17,7 @@ func spawn():
 		$Timer.start()
 		bool_spawn = false
 		var enemy_instance = Enemy_scene.instantiate()
-		enemy_instance.position = Vector2(random.randi_range(17.0,427.0), random.randi_range(-242.0,22.0))
+		enemy_instance.position = Vector2(random.randi_range(1147.0,1748.0), random.randi_range(-66.0,409.0))
 		add_child(enemy_instance)
 
 
