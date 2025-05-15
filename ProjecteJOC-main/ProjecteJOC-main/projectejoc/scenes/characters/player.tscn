@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://pggig1gh71n7"]
+[gd_scene load_steps=33 format=3 uid="uid://pggig1gh71n7"]
 
 [ext_resource type="Texture2D" uid="uid://11ov2jggh74a" path="res://scenes/characters/Zombie-Tileset---_0482_Capa-483.png" id="1_3ebvk"]
 [ext_resource type="Script" uid="uid://2iqjiiqa8aym" path="res://scenes/characters/player.gd" id="1_yewup"]
@@ -148,6 +148,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g66nw"]
 size = Vector2(12, 18)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rpnd8"]
+bg_color = Color(0.357839, 0.699816, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.00566115, 0.00566115, 0.00566114, 1)
+
 [node name="player" type="CharacterBody2D"]
 collision_layer = 3
 script = ExtResource("1_yewup")
@@ -188,3 +195,14 @@ editor_draw_limits = true
 
 [node name="gun" parent="." instance=ExtResource("17_rpnd8")]
 position = Vector2(0, -8)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -6.0
+offset_top = -22.0
+offset_right = 55.0
+offset_bottom = 5.0
+scale = Vector2(0.178468, 0.0489329)
+theme_override_styles/fill = SubResource("StyleBoxFlat_rpnd8")
+step = 1.0
+value = 100.0
+show_percentage = false
