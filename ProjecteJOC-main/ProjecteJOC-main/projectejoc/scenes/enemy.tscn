@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://4edxqqwtc6db"]
+[gd_scene load_steps=29 format=3 uid="uid://4edxqqwtc6db"]
 
 [ext_resource type="Texture2D" uid="uid://b0a3h4tacm80f" path="res://scenes/enemy/Zombie.png" id="1_7p1mj"]
 [ext_resource type="Script" uid="uid://ccth4rlxkbg3r" path="res://scripts/enemy.gd" id="1_md0e3"]
+[ext_resource type="PackedScene" uid="uid://bmdncp4vw3t8o" path="res://scenes/enemy_weapon.tscn" id="3_4ra3w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
 atlas = ExtResource("1_7p1mj")
@@ -204,6 +205,10 @@ shape = SubResource("CircleShape2D_i4rgx")
 position = Vector2(0, -9.25)
 shape = SubResource("RectangleShape2D_2mchx")
 debug_color = Color(0.917647, 0.21824, 0.470979, 0.42)
+
+[node name="EnemyWeapon" parent="." instance=ExtResource("3_4ra3w")]
+position = Vector2(0, -9)
+scale = Vector2(-8.41541, -9.09667)
 
 [connection signal="body_entered" from="detaction_area" to="." method="_on_detaction_area_body_entered"]
 [connection signal="body_exited" from="detaction_area" to="." method="_on_detaction_area_body_exited"]

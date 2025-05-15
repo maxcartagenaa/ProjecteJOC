@@ -1,5 +1,7 @@
-Node
 CollisionShape2D
+CollisionPolygon2D
+Area2D
+Node
 Button
 Label
 Sprite2D
@@ -8,7 +10,5 @@ ColorRect
 GridContainer
 Control
 AnimatedSprite2D
-Area2D
 Marker2D
 CharacterBody2D
-TileMap

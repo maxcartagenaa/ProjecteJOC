@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmdncp4vw3t8o"]
+
+[ext_resource type="Script" uid="uid://btsd0ntx3q5vn" path="res://enemy_weapon.gd" id="1_yvelt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_670s5"]
+radius = 2.0
+height = 4.0
+
+[node name="EnemyWeapon" type="Area2D"]
+scale = Vector2(1.1973, 1.51874)
+script = ExtResource("1_yvelt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_670s5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
