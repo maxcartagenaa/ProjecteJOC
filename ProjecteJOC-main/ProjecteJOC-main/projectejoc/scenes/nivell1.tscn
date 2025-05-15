@@ -1,4 +1,4 @@
-[gd_scene load_steps=265 format=3 uid="uid://cka72n8wg2r2g"]
+[gd_scene load_steps=264 format=3 uid="uid://cka72n8wg2r2g"]
 
 [ext_resource type="Texture2D" uid="uid://cv6wrojfktdtk" path="res://assets/carrateras/1pix.png" id="1_6tgqv"]
 [ext_resource type="Script" uid="uid://b5i10t4mww38y" path="res://scripts/nivell_1.gd" id="1_e2ytl"]
@@ -115,6 +115,7 @@
 [ext_resource type="Script" uid="uid://q5xy26fy34x0" path="res://scenes/spawner4.gd" id="112_s7beg"]
 [ext_resource type="Script" uid="uid://c6ilt4ey1vuft" path="res://scenes/spawner5.gd" id="113_cf84b"]
 [ext_resource type="Script" uid="uid://benesj6opgoll" path="res://scenes/spawner6.gd" id="114_x8ss6"]
+[ext_resource type="Script" uid="uid://bdn20y0a6kbi3" path="res://scenes/spawner_control.gd" id="116_x8ss6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bxdf"]
 texture = ExtResource("34_rqr3a")
@@ -4349,12 +4350,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_unobd")
 sources/1 = SubResource("TileSetAtlasSource_an8cn")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmtfq"]
-size = Vector2(61, 331)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7beg"]
-size = Vector2(416.375, 72.205)
-
 [node name="nivell1" type="Node2D"]
 script = ExtResource("1_e2ytl")
 
@@ -4432,12 +4427,6 @@ layer_0/tile_data = PackedInt32Array(1507392, 983043, 13, 1441856, 983043, 11, 8
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("110_xmtfq")]
 process_mode = 0
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(1131, 523)
-shape = SubResource("RectangleShape2D_xmtfq")
-debug_color = Color(0.764642, 0.31214, 0.811958, 0.42)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1766, 733)
-shape = SubResource("RectangleShape2D_s7beg")
-debug_color = Color(0.909191, 0.000109546, 0.734205, 0.42)
+[node name="spawner_control" type="Node" parent="."]
+script = ExtResource("116_x8ss6")
+spawners = Array[NodePath]([NodePath("../spawner"), NodePath("../spawner2"), NodePath("../spawner3"), NodePath("../spawner4"), NodePath("../spawner5"), NodePath("../spawner6")])

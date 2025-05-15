@@ -1,5 +1,4 @@
-ProgressBar
-TextureProgressBar
+Node
 CollisionShape2D
 Button
 Label
