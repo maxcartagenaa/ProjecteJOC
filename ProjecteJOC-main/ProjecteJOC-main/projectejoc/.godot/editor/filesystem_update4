@@ -10,3 +10,6 @@ res://scenes/pause_menu.tscn
 res://scenes/you_died_menu.tscn
 res://scenes/gun.tscn
 res://scenes/enemy_weapon.tscn
+res://scenes/characters/player.gd
+res://enemy_weapon.gd
+res://scenes/bullet.tscn

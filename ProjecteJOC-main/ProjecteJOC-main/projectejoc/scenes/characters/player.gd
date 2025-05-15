@@ -10,6 +10,7 @@ var player_direction: Vector2
 
 func _ready() -> void:
 	set_health()
+	print(live_points)
 
 func set_health() -> void:
 	health_bar.max_value = live_points
@@ -19,8 +20,11 @@ func update_health(Amount : int) -> void:
 	live_points += Amount
 	health_bar.value = live_points
 
-func take_damage(amount: int) -> void:
+func player_damage(amount: int) -> void:
 	live_points -= amount
+	
+	print(live_points)
+	
 	update_health_bar()
 	if live_points == 0:
 		die()

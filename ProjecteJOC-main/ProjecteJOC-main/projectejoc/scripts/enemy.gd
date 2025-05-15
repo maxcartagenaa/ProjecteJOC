@@ -27,7 +27,8 @@ func _physics_process(delta):
 func _on_detaction_area_body_entered(body: Node2D) -> void:
 	player = body
 	player_chase = true
-
+	if body.has_method("player_damage"):
+		$AnimatedSprite2D.play("atack")
 
 func _on_detaction_area_body_exited(body: Node2D) -> void:
 	player = null
