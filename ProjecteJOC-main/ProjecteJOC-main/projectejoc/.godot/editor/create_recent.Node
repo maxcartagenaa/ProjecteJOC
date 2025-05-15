@@ -1,9 +1,9 @@
-CollisionShape2D
-CanvasLayer
-Sprite2D
-ColorRect
 Button
 Label
+Sprite2D
+CollisionShape2D
+CanvasLayer
+ColorRect
 GridContainer
 Control
 AnimatedSprite2D

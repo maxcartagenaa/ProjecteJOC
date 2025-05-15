@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://ywk5ry7g2uhc"]
+
+[ext_resource type="Texture2D" uid="uid://cdkrx1dxk1imr" path="res://you_died_forest.png" id="1_y061l"]
+[ext_resource type="FontFile" uid="uid://dwdqnjumakrju" path="res://hf-free-complete/compass-pro-v1.1/CompassPro.otf" id="2_koauc"]
+[ext_resource type="Script" uid="uid://n0k4djx10v4s" path="res://scenes/you_died_text.gd" id="3_w0imc"]
+[ext_resource type="Script" uid="uid://cavy6o7a31g1e" path="res://scenes/quit_game_button.gd" id="4_w0imc"]
+[ext_resource type="Script" uid="uid://cg7lvkecbh75c" path="res://scenes/try_again_button.gd" id="5_33a0f"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578, 325)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_y061l")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -1.0
+offset_top = -406.0
+offset_right = 1155.0
+offset_bottom = -321.0
+theme_override_fonts/font = ExtResource("2_koauc")
+theme_override_font_sizes/font_size = 90
+text = "Y O U   D I E D"
+horizontal_alignment = 1
+script = ExtResource("3_w0imc")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 393.0
+offset_right = 1157.0
+offset_bottom = 449.0
+theme_override_fonts/font = ExtResource("2_koauc")
+theme_override_font_sizes/font_size = 48
+text = "TRY AGAIN               QUIT GAME"
+horizontal_alignment = 1
+
+[node name="quit game button" type="Button" parent="Label2"]
+layout_mode = 0
+offset_left = 688.0
+offset_top = 2.0
+offset_right = 905.0
+offset_bottom = 45.0
+script = ExtResource("4_w0imc")
+
+[node name="try_again_button" type="Button" parent="Label2"]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 4.0
+offset_right = 476.0
+offset_bottom = 41.0
+script = ExtResource("5_33a0f")
+
+[connection signal="pressed" from="Label2/quit game button" to="Label" method="_on_quit_game_button_pressed"]
+[connection signal="pressed" from="Label2/try_again_button" to="Label" method="_on_try_again_button_pressed"]
