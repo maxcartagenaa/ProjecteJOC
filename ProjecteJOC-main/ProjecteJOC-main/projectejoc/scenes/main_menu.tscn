@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjqnhtuis1k6a"]
+[gd_scene load_steps=5 format=3 uid="uid://bjqnhtuis1k6a"]
 
 [ext_resource type="Texture2D" uid="uid://yjn55tolie13" path="res://main_menu.PNG" id="1_l6cm7"]
 [ext_resource type="Script" uid="uid://dwru3b31rfno4" path="res://scripts/main_menu.gd" id="1_wu84c"]
 [ext_resource type="Texture2D" uid="uid://c7ms6n0vxby8g" path="res://play_button.png" id="2_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bijpxwjjbhm6q" path="res://credits_button.png" id="3_wu84c"]
-[ext_resource type="AudioStream" uid="uid://c0n0c7uhg2411" path="res://sounds/celestial-vibe-334267.mp3" id="5_8ln24"]
 
 [node name="main_menu" type="Node2D"]
 script = ExtResource("1_wu84c")
@@ -38,12 +37,6 @@ offset_left = -303.0
 offset_top = -70.0
 offset_right = 307.0
 offset_bottom = 100.0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_8ln24")
-volume_db = 0.035
-autoplay = true
-parameters/looping = true
 
 [connection signal="pressed" from="play_sprite/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="credits_sprite/credits_button" to="." method="_on_credits_button_pressed"]
