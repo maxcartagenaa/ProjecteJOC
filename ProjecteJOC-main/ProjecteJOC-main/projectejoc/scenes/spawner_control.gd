@@ -29,6 +29,8 @@ func _on_enemy_dead():
 		enemies_per_spawner = 5 + round
 		await get_tree().create_timer(2.0).timeout
 		start_wave()
+		if round == 3:
+			get_tree().change_scene_to_file("res://scenes/paralax.tscn")
 
 func update_round_ui():
 	if has_node("RoundLabel"):

@@ -1,3 +1,4 @@
+Label
 AudioStreamPlayer
 CharacterBody2D
 CollisionShape2D
@@ -5,7 +6,6 @@ CollisionPolygon2D
 Area2D
 Node
 Button
-Label
 Sprite2D
 CanvasLayer
 ColorRect
