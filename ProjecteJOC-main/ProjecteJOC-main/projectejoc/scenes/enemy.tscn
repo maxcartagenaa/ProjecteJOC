@@ -247,7 +247,7 @@ size = Vector2(18, 19.5)
 script = ExtResource("1_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -7.895)
+position = Vector2(0, -9.895)
 scale = Vector2(0.71875, 0.66129)
 sprite_frames = SubResource("SpriteFrames_wjec0")
 animation = &"atack"
