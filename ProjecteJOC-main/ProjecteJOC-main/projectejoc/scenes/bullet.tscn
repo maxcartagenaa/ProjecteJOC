@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://lbjqt1b57ne"]
+[gd_scene load_steps=10 format=3 uid="uid://lbjqt1b57ne"]
 
 [ext_resource type="Script" uid="uid://b7i463ch4hub2" path="res://scripts/bullet.gd" id="1_tamys"]
 [ext_resource type="Texture2D" uid="uid://coht0oskrv6f3" path="res://scenes/characters/Zombie-Tileset---_0370_Capa-371.png" id="2_26lx3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bjbwry1frp0yd" path="res://scenes/characters/Zombie-Tileset---_0372_Capa-373.png" id="4_k76ql"]
 [ext_resource type="Texture2D" uid="uid://sunjluuspou2" path="res://scenes/characters/Zombie-Tileset---_0373_Capa-374.png" id="5_in4mv"]
 [ext_resource type="Texture2D" uid="uid://cw5micobsu1wf" path="res://scenes/characters/Zombie-Tileset---_0374_Capa-375.png" id="6_s437g"]
+[ext_resource type="AudioStream" uid="uid://cv4gd5rbehbrm" path="res://sounds/gun_shot.mp3" id="7_26lx3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iqq7w"]
 radius = 3.0
@@ -46,5 +47,11 @@ position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_6umxm")
 animation = &"shoot"
 frame_progress = 0.290217
+
+[node name="gun sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_26lx3")
+volume_db = -20.855
+pitch_scale = 0.6
+autoplay = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
